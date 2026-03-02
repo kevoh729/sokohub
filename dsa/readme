@@ -1,0 +1,26 @@
+ALGORITHM multiply_matrices(A, B)
+    // Get dimensions
+    rowsA = length(A)
+    colsA = length(A[0]) 
+    rowsB = length(B)
+    colsB = length(B[0])
+    
+    // Check if multiplication is possible
+    IF colsA != rowsB THEN
+        RETURN "Error: Incompatible dimensions"
+    END IF
+    
+    // Create result matrix filled with zeros
+    result[rowsA][colsB] = 0
+    
+    // Triple nested loop for multiplication
+    FOR i FROM 0 TO rowsA-1 DO
+        FOR j FROM 0 TO colsB-1 DO
+            FOR k FROM 0 TO colsA-1 DO
+                result[i][j] = result[i][j] + A[i][k] * B[k][j]
+            END FOR
+        END FOR
+    END FOR
+    
+    RETURN result
+END ALGORITHM

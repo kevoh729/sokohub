@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | Modern UI</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 900px;
+            max-width: 95%;
+            background: white;
+            border-radius: 15px;
+            display: flex;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+
+        .left {
+            flex: 1;
+            background: url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f")
+                        center/cover no-repeat;
+            color: white;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .right {
+            flex: 1;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        h2 {
+            margin-bottom: 25px;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-group i {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            color: #777;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px 15px 12px 45px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #4facfe, #00f2fe);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        p {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        a {
+            color: #4facfe;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="left">
+        <h1>Welcome Back</h1>
+        <p>Login to continue learning</p>
+    </div>
+
+    <div class="right">
+        <h2>Login</h2>
+
+        <form>
+            <div class="input-group">
+                <i class="fa fa-envelope"></i>
+                <input type="email" placeholder="Email" required>
+            </div>
+
+            <div class="input-group">
+                <i class="fa fa-lock"></i>
+                <input type="password" placeholder="Password" required>
+            </div>
+
+            <button type="submit">Login</button>
+
+            <p>Don’t have an account? <a href="register.html">Register</a></p>
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
